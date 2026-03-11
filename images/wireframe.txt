@@ -1,0 +1,19 @@
+-------------------------------------------------
+|                   HEADER                      |
+|  [LOGO]   Isaac's Portal Page (h1)            |
+-------------------------------------------------
+|                     NAV                       |
+|  Home | WWR | ICE | About Me                  |
+-------------------------------------------------
+|                     MAIN                      |
+| [Intro panel: h2 + paragraph]                 |
+|                                               |
+| [Left: Image/logo panel]   [Right: List panel]|
+|                                               |
+| [Full-width: Assignment Table panel]          |
+|                                               |
+| [Form panel: Name / Email / Message / button] |
+-------------------------------------------------
+|                    FOOTER                     |
+|   © Isaac – WDD 130 Portal                    |
+-------------------------------------------------

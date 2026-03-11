@@ -1,0 +1,206 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page base */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0B0E11;
+  color: #C7CBD1;
+
+  /* decorative background image */
+  background-image: url("../images/logo-icon.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 110px auto;
+}
+
+/* Layout width */
+header,
+nav,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #151A1F;
+  border-bottom: 2px solid #D62839;
+}
+
+header .logo {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 1.9rem;
+  color: #E4E7EB;
+}
+
+/* Navigation */
+nav {
+  background-color: #0B0E11;
+  border-bottom: 1px solid #151A1F;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 1.5rem;
+}
+
+nav a {
+  color: #C7CBD1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0D6CFF;
+}
+
+/* Main layout with grid */
+main {
+  padding: 2rem 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Card style */
+main section {
+  background-color: #151A1F;
+  border: 1px solid #222832;
+  padding: 1.25rem;
+  border-radius: 8px;
+}
+
+main h2 {
+  margin-bottom: 0.75rem;
+  color: #E4E7EB;
+}
+
+main h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  line-height: 1.6;
+}
+
+/* Assignments list */
+.assignments ul {
+  margin-left: 1.25rem;
+}
+
+.assignments a {
+  color: #0D6CFF;
+}
+
+.assignments a:hover {
+  color: #FF6A2E;
+}
+
+/* Table */
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-section th,
+.table-section td {
+  border: 1px solid #333842;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.table-section th {
+  background-color: #202632;
+}
+
+/* Form */
+.contact form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #333842;
+  background-color: #0B0E11;
+  color: #C7CBD1;
+}
+
+.contact textarea {
+  min-height: 100px;
+}
+
+.contact button {
+  width: fit-content;
+  padding: 0.6rem 1.3rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #D62839;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #FF6A2E;
+}
+
+/* Grid layout for larger screens */
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-areas:
+      "intro intro"
+      "assign table"
+      "contact contact";
+  }
+
+  .intro {
+    grid-area: intro;
+  }
+
+  .assignments {
+    grid-area: assign;
+  }
+
+  .table-section {
+    grid-area: table;
+  }
+
+  .contact {
+    grid-area: contact;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #C7CBD1;
+  border-top: 1px solid #151A1F;
+  margin-bottom: 2rem;
+}
